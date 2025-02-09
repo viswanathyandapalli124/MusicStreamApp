@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>INDEX</title>
+    <style>
+        /* General reset for better consistency across browsers */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling with background image */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('/images/image2.jpg'); /* Add your background image here */
+            background-size: cover; /* Make sure the image covers the whole screen */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff; /* Text color for contrast */
+        }
+
+        /* Container styling */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.4); /* Semi-transparent background for better readability */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        /* Heading styling */
+        h1 {
+            color: #fff; /* Heading color */
+            margin-bottom: 20px;
+            font-size: 2em; /* Font size for emphasis */
+        }
+
+        /* Button styling */
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Link styling */
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EchoStream says Hi to you</h1>
+        <a href="login">
+            <button><b>LOGIN</b></button>
+        </a>
+        <a href="register">
+            <button><b>REGISTER</b></button>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ADMIN HOME</title>
+    <style>
+        /* General reset for better consistency across browsers */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container styling */
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Page title styling */
+        p {
+            font-size: 1.75rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Form styling */
+        form {
+            margin: 15px 0;
+        }
+
+        /* Button styling */
+        button.large-button {
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+            background-color: #00c6ff;
+            color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button.large-button:hover {
+            background-color: #00a3e0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Admin Home Page</p>
+        <form class="admin" action="newsong">
+            <button class="large-button">ADD NEW SONGS</button>
+        </form>
+        <form class="admin" action="viewsongs">
+            <button class="large-button">VIEW SONGS</button>
+        </form>
+        <form class="admin" action="createplaylists">
+            <button class="large-button">CREATE PLAYLIST</button>
+        </form>
+        <form class="admin" action="viewplaylists">
+            <button class="large-button">VIEW PLAYLIST</button>
+        </form>
+    </div>
+</body>
+</html>

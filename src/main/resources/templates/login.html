@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>USER LOGIN</title>
+    <style>
+        /* General reset for better consistency across browsers */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling with background image */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('path-to-your-background-image.jpg'); /* Add your background image here */
+            background-size: cover; /* Make sure the image covers the whole screen */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container styling */
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Box styling */
+        .box2 {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            /* Optional: Add some transparency to the box to blend with the background */
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Form heading styling */
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Label and input styling */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        /* Radio button styling */
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+
+        /* Button styling */
+        .large-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .large-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Button container styling */
+        .button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <div class="box2">
+            <form action="validate" method="post">
+                <h2>User login:</h2>
+
+                <label for="email">Email:</label>
+                <input class="input" type="email" name="email" id="email" required>
+
+                <label for="password">Password:</label>
+                <input class="input" type="password" name="password" id="password" required>
+
+                <label>Role:</label>
+                Admin<input type="radio" name="role" value="admin">
+                Customer<input type="radio" name="role" value="customer">
+
+                <div class="button">
+                    <input class="large-button" type="submit" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ADD SONG</title>
+    <style>
+        /* General reset for better consistency across browsers */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling with background image */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('path-to-your-background-image.jpg'); /* Add your background image here */
+            background-size: cover; /* Make sure the image covers the whole screen */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container styling */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Box styling */
+        .box {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            /* Optional: Add some transparency to the box to blend with the background */
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Input field styling */
+        .input {
+            width: calc(100% - 22px); /* Adjusted width to account for padding and border */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        /* Button styling */
+        .large-button {
+            background-color: #00bcd4; /* Light blue color */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .large-button:hover {
+            background-color: #0097a7; /* Darker blue color on hover */
+        }
+
+        /* Button container styling */
+        .button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form action="addsong" method="post">
+                <label for="name">Song name:</label>
+                <input class="input" type="text" id="name" name="name" required>
+
+                <label for="artist">Song Artist:</label>
+                <input class="input" type="text" id="artist" name="artist" required>
+
+                <label for="genre">Song Genre:</label>
+                <input class="input" type="text" id="genre" name="genre" required>
+
+                <label for="link">Song Link:</label>
+                <input class="input" type="text" id="link" name="link" required>
+
+                <div class="button">
+                    <button class="large-button" type="submit">
+                        <b>ADD SONG</b>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

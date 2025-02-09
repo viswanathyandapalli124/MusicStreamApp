@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        /* General reset for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure body covers at least the viewport height */
+            padding: 20px;
+            overflow: auto; /* Ensure overflow is set to auto */
+        }
+
+        /* Container styling */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 600px; /* Limit the width of the form */
+        }
+
+        /* Box styling */
+        .box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin: auto;
+        }
+
+        /* Header styling */
+        header h1 {
+            margin-bottom: 20px;
+            color: #333333;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333333;
+        }
+
+        /* Input and textarea styling */
+        .input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .input:focus, textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        /* Radio button styling */
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Button styling */
+        .large-button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .large-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <header>
+                <h1>Registration Form</h1>
+            </header>
+            <form action="register" method="post"> 
+                <label for="uname">Username:</label> 
+                <input class="input" type="text" id="uname" name="uname" placeholder="Enter your username"><br>
+                
+                <label for="email">*Email:</label>
+                <input class="input" type="email" id="email" name="email" required placeholder="Enter your email"><br>
+                
+                <label for="password">*Password:</label>
+                <input class="input" type="password" id="password" name="password" required placeholder="Enter your password"><br>
+                
+                <label>*Gender:</label>
+                <div>
+                    Male <input type="radio" name="gender" value="male">
+                    Female <input type="radio" name="gender" value="female">
+                    Other <input type="radio" name="gender" value="other">
+                </div><br>
+                
+                <label>*Role:</label>
+                <div>
+                    Admin <input type="radio" name="role" value="admin">
+                    Customer <input type="radio" name="role" value="customer">
+                </div><br>
+                
+                <label>Address:</label>
+                <textarea rows="4" name="address" placeholder="Enter your address"></textarea><br>
+                
+                <button class="large-button" type="submit">
+                    REGISTER
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

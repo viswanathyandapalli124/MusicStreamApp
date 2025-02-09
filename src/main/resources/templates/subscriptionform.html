@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription Page</title>
+    <style>
+        /* General reset for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px; /* Added padding to prevent edge-to-edge layout */
+        }
+
+        /* Container styling */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Box styling */
+        .box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 350px; /* Added max-width for better responsiveness */
+        }
+
+        /* Paragraph styling */
+        .box p {
+            font-size: 20px; /* Increased font size for better readability */
+            color: #333;
+            margin-bottom: 25px; /* Increased bottom margin for more spacing */
+        }
+
+        /* Input button styling */
+        input[type="submit"] {
+            background-color: #00bcd4; /* Light blue color */
+            color: #fff;
+            border: none;
+            padding: 12px 25px; /* Added more padding for larger buttons */
+            border-radius: 6px; /* Slightly larger border-radius for a modern look */
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px; /* Added margin to space out buttons */
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0097a7; /* Darker blue color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p><b>Please Do Subscribe</b></p>
+            
+            <form action="pay">
+                <input type="submit" value="Get Premium">
+            </form>
+            <form action="logout">
+                <input type="submit" value="LOGOUT">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
