@@ -1,7 +1,6 @@
 
 # MusicStreamApp
-=======
-# EchoStream
+
 Music Player Application using SpringBoot
 
 # EchoStream 🎶
@@ -28,5 +27,3 @@ Music Player Application using SpringBoot
 1. Clone the repository:
    ```bash
    git clone https://github.com/DivyaBinduMenda/EchoStream.git
-
->>>>>>> 97ce970 (Initial commit)
